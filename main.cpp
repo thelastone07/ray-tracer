@@ -1,6 +1,8 @@
 #include<iostream>
 #include<chrono>
 
+#include "utility/color.h"
+
 signed main() {
     // camera
     int image_width = 256;
@@ -13,15 +15,7 @@ signed main() {
     for (int j = 0; j < image_height; j++) {
         std::clog << "\rRemaining: " << image_height - j << " " << std::flush;
         for (int i = 0; i < image_width; i++) {
-            auto r = double(i) / image_width;
-            auto g = double(j) / image_height;
-            auto b = 0.0;
-
-            auto ir = int(255.999 * r);
-            auto ig = int(255.999 * g);
-            auto ib = int(255.999 * b);
-
-            std::cout << ir << " " << ig << " " << ib << "\n";
+            write_color(std::cout, color(double(i) / (image_width-1), double(j) / (image_height - 1), 0));
         }
     }
     std::clog << "\rDone                       \n";
