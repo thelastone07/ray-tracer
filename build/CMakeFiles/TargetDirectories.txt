@@ -1,0 +1,3 @@
+D:/Journey/Code/ray-tracer/build/CMakeFiles/ray-tracer.dir
+D:/Journey/Code/ray-tracer/build/CMakeFiles/ALL_BUILD.dir
+D:/Journey/Code/ray-tracer/build/CMakeFiles/ZERO_CHECK.dir
